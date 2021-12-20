@@ -18,7 +18,7 @@ Example Connector HTTP Post Call
 
 This is an example capability
      
-##### Properties:
+  ##### Properties:
      
   - body
       - Description: The body of the POST call
