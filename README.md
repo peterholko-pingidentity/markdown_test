@@ -14,7 +14,7 @@ Example Connector HTTP Post Call
 
 ## Capabilites
 
-  - Post HTTP
+#### Post HTTP
      - This is an example capability
      
      Properties:
