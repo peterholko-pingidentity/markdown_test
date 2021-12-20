@@ -14,9 +14,10 @@ Example Connector HTTP Post Call
 
 ## Capabilites
 
-
-     - Post HTTP
-         - This is an example capability
-         - body
-                 - Description: The body of the POST call
-                 - Type: textField
+  - Post HTTP
+     - This is an example capability
+     
+     Properties:
+     body
+         - Description: The body of the POST call
+         - Type: textField
