@@ -12,14 +12,15 @@ Example Connector HTTP Post Call
      - Required: true
     
 
-## Capabilites
+#### Capabilites
 
-#### Post HTTP
+#### Post HTTP (postHTTP)
+
 
 This is an example capability
-     
-  ##### Properties:
-     
-  - body
-      - Description: The body of the POST call
-      - Type: textField
+
+##### postHTTP
+
+
+     - Description: The body of the POST call
+     - Type: textField
