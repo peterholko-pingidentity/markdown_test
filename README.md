@@ -5,22 +5,25 @@ PingOne SSO is a cloud-based framework for secure identity access management.
 
 ## Connection Properties
 
+#### Client ID `textField`
 
- - Client ID
-     - Description: The id for your client found in Ping's Dashboard
-     - Type: textField
-    
- - Client Secret
-     - Description: Client Secret from your client in Ping's Dashboard
-     - Type: textField
-    
- - Region
-     - Description: The region your PingOne environment is in.
-     - Type: dropDown
-    
- - Environment ID
-     - Description: Your Environment ID provided by Ping.
-     - Type: textField
+
+The id for your client found in Ping's Dashboard
+
+#### Client Secret `textField`
+
+
+Client Secret from your client in Ping's Dashboard
+
+#### Region `dropDown`
+
+
+The region your PingOne environment is in.
+
+#### Environment ID `textField`
+
+
+Your Environment ID provided by Ping.
     
 
 ## Capabilites
