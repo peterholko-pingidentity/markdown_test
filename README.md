@@ -20,11 +20,16 @@ Client Secret from your client in Ping's Dashboard
 
 The region your PingOne environment is in.
 
+
+ - North America - US
+ - North America - Canada
+ - Europe
+ - Asia - Australia
+
 #### Environment ID `textField`
 
 
 Your Environment ID provided by Ping.
-    
 
 ## Capabilites
 
@@ -33,78 +38,65 @@ Your Environment ID provided by Ping.
 
 Create user in PingOne.
 
-#### username
+#### Username `textField` `required`
 
 
- - Description: undefined
- - Type: textField
- - Required: true
+undefined
 
-#### populationId
+#### Population ID `textField`
 
 
- - Description: ID of the Population
- - Type: textField
+ID of the Population
 
-#### password
-
-
- - Description: undefined
- - Type: textField
-
-#### given
+#### Password `textField`
 
 
- - Description: undefined
- - Type: textField
+undefined
 
-#### family
-
-
- - Description: undefined
- - Type: textField
-
-#### email
+#### Given Name `textField`
 
 
- - Description: undefined
- - Type: textField
+undefined
 
-#### primaryPhone
-
-
- - Description: undefined
- - Type: textField
-
-#### mobilePhone
+#### Family Name `textField`
 
 
- - Description: undefined
- - Type: textField
+undefined
 
-#### preferredLanguage
-
-
- - Description: undefined
- - Type: textField
-
-#### locale
+#### Email `textField`
 
 
- - Description: undefined
- - Type: textField
+undefined
 
-#### additionalUserProperties
-
-
- - Description: Input additional properties as JSON.
- - Type: textField
-
-#### lifecycleStatus
+#### Primary Phone `textField`
 
 
- - Description: Indicate whether the new user account must be verified after it is created.
- - Type: dropDown
+undefined
+
+#### Mobile Phone `textField`
+
+
+undefined
+
+#### Preferred Language `textField`
+
+
+undefined
+
+#### Locale `textField`
+
+
+undefined
+
+#### Additional Properties `textField`
+
+
+Input additional properties as JSON.
+
+#### Lifecycle Status `dropDown`
+
+
+Indicate whether the new user account must be verified after it is created.
 
 ---
 
@@ -113,17 +105,15 @@ Create user in PingOne.
 
 Retrieves user information.
 
-#### matchAttribute
+#### Match Attributes `dropDown`
 
 
- - Description: Schema attributes to match against.
- - Type: dropDown
+Schema attributes to match against.
 
-#### identifier
+#### Identifier `textField`
 
 
- - Description: Identifier to match a user.
- - Type: textField
+Identifier to match a user.
 
 ---
 
@@ -132,17 +122,15 @@ Retrieves user information.
 
 Look up a user in the directory with an identifier to determine the authentication authority
 
-#### matchAttributes
+#### Match Attributes `textFieldArrayView`
 
 
- - Description: Schema attributes to match against.
- - Type: textFieldArrayView
+Schema attributes to match against.
 
-#### identifier
+#### Identifier `textField`
 
 
- - Description: Identifier to match a user.
- - Type: textField
+Identifier to match a user.
 
 ---
 
@@ -151,72 +139,60 @@ Look up a user in the directory with an identifier to determine the authenticati
 
 Update user information in PingOne.
 
-#### matchAttribute
+#### Match Attributes `dropDown`
 
 
- - Description: Schema attributes to match against.
- - Type: dropDown
+Schema attributes to match against.
 
-#### identifier
-
-
- - Description: Identifier to match a user.
- - Type: textField
-
-#### username
+#### Identifier `textField`
 
 
- - Description: undefined
- - Type: textField
- - Required: true
+Identifier to match a user.
 
-#### given
+#### Username `textField` `required`
 
 
- - Description: undefined
- - Type: textField
+undefined
 
-#### family
-
-
- - Description: undefined
- - Type: textField
-
-#### email
+#### Given Name `textField`
 
 
- - Description: undefined
- - Type: textField
+undefined
 
-#### primaryPhone
-
-
- - Description: undefined
- - Type: textField
-
-#### mobilePhone
+#### Family Name `textField`
 
 
- - Description: undefined
- - Type: textField
+undefined
 
-#### preferredLanguage
-
-
- - Description: undefined
- - Type: textField
-
-#### locale
+#### Email `textField`
 
 
- - Description: undefined
- - Type: textField
+undefined
 
-#### additionalUserProperties
+#### Primary Phone `textField`
 
 
- - Description: Input additional properties as JSON.
- - Type: textField
+undefined
+
+#### Mobile Phone `textField`
+
+
+undefined
+
+#### Preferred Language `textField`
+
+
+undefined
+
+#### Locale `textField`
+
+
+undefined
+
+#### Additional Properties `textField`
+
+
+Input additional properties as JSON.
 
 ---
 
@@ -225,17 +201,15 @@ Update user information in PingOne.
 
 Deletes a user.
 
-#### matchAttribute
+#### Match Attributes `dropDown`
 
 
- - Description: Schema attributes to match against.
- - Type: dropDown
+Schema attributes to match against.
 
-#### identifier
+#### Identifier `textField`
 
 
- - Description: Identifier to match a user.
- - Type: textField
+Identifier to match a user.
 
 ---
 
@@ -244,23 +218,20 @@ Deletes a user.
 
 You can set enable status of a P1 User
 
-#### matchAttribute
+#### Match Attributes `dropDown`
 
 
- - Description: Schema attributes to match against.
- - Type: dropDown
+Schema attributes to match against.
 
-#### identifier
-
-
- - Description: Identifier to match a user.
- - Type: textField
-
-#### enabled
+#### Identifier `textField`
 
 
- - Description: User enabled status in PingOne
- - Type: toggleSwitch
+Identifier to match a user.
+
+#### Enable User `toggleSwitch`
+
+
+User enabled status in PingOne
 
 ---
 
@@ -269,17 +240,15 @@ You can set enable status of a P1 User
 
 Sends a verification code to the user that can be used to verify their email.
 
-#### matchAttribute
+#### Match Attributes `dropDown`
 
 
- - Description: Schema attributes to match against.
- - Type: dropDown
+Schema attributes to match against.
 
-#### identifier
+#### Identifier `textField`
 
 
- - Description: Identifier to match a user.
- - Type: textField
+Identifier to match a user.
 
 ---
 
@@ -288,23 +257,20 @@ Sends a verification code to the user that can be used to verify their email.
 
 Verifies a users email with a code sent to them
 
-#### matchAttribute
+#### Match Attributes `dropDown`
 
 
- - Description: Schema attributes to match against.
- - Type: dropDown
+Schema attributes to match against.
 
-#### identifier
-
-
- - Description: Identifier to match a user.
- - Type: textField
-
-#### verificationCode
+#### Identifier `textField`
 
 
- - Description: Code to verify a user's account.
- - Type: textField
+Identifier to match a user.
+
+#### Verification Code `textField`
+
+
+Code to verify a user's account.
 
 ---
 
@@ -313,17 +279,15 @@ Verifies a users email with a code sent to them
 
 Sends a one time use recovery code to the user's email that may be used to recover a forgotten password
 
-#### matchAttribute
+#### Match Attributes `dropDown`
 
 
- - Description: Schema attributes to match against.
- - Type: dropDown
+Schema attributes to match against.
 
-#### identifier
+#### Identifier `textField`
 
 
- - Description: Identifier to match a user.
- - Type: textField
+Identifier to match a user.
 
 ---
 
@@ -332,23 +296,20 @@ Sends a one time use recovery code to the user's email that may be used to recov
 
 You can check a user's P1 password to verify its current state
 
-#### matchAttribute
+#### Match Attributes `dropDown`
 
 
- - Description: Schema attributes to match against.
- - Type: dropDown
+Schema attributes to match against.
 
-#### identifier
-
-
- - Description: Identifier to match a user.
- - Type: textField
-
-#### password
+#### Identifier `textField`
 
 
- - Description: undefined
- - Type: textField
+Identifier to match a user.
+
+#### Password `textField`
+
+
+undefined
 
 ---
 
@@ -357,29 +318,25 @@ You can check a user's P1 password to verify its current state
 
 Recovers a forgotten password using a one time use recovery code
 
-#### matchAttribute
+#### Match Attributes `dropDown`
 
 
- - Description: Schema attributes to match against.
- - Type: dropDown
+Schema attributes to match against.
 
-#### identifier
-
-
- - Description: Identifier to match a user.
- - Type: textField
-
-#### recoveryCode
+#### Identifier `textField`
 
 
- - Description: The recovery code sent to the user.
- - Type: textField
+Identifier to match a user.
 
-#### newPassword
+#### Recovery Code `textField`
 
 
- - Description: The new password for the user.
- - Type: textField
+The recovery code sent to the user.
+
+#### New Password `textField`
+
+
+The new password for the user.
 
 ---
 
@@ -388,29 +345,25 @@ Recovers a forgotten password using a one time use recovery code
 
 User can reset their PingOne password
 
-#### matchAttribute
+#### Match Attributes `dropDown`
 
 
- - Description: Schema attributes to match against.
- - Type: dropDown
+Schema attributes to match against.
 
-#### identifier
-
-
- - Description: Identifier to match a user.
- - Type: textField
-
-#### currentPassword
+#### Identifier `textField`
 
 
- - Description: Current Password of the user.
- - Type: textField
+Identifier to match a user.
 
-#### newPassword
+#### Current Password `textField`
 
 
- - Description: The new password for the user.
- - Type: textField
+Current Password of the user.
+
+#### New Password `textField`
+
+
+The new password for the user.
 
 ---
 
@@ -419,35 +372,30 @@ User can reset their PingOne password
 
 Set a user's password, optionally forcing user to change password and bypass ping password policy
 
-#### matchAttribute
+#### Match Attributes `dropDown`
 
 
- - Description: Schema attributes to match against.
- - Type: dropDown
+Schema attributes to match against.
 
-#### identifier
-
-
- - Description: Identifier to match a user.
- - Type: textField
-
-#### passwordValue
+#### Identifier `textField`
 
 
- - Description: The new password to set for the user provided as clear text or pre-encoded.
- - Type: textField
+Identifier to match a user.
 
-#### forceChange
-
-
- - Description: User required to change password
- - Type: toggleSwitch
-
-#### bypassPolicy
+#### Password Value `textField`
 
 
- - Description: PingOne Password Policies will be bypassed
- - Type: toggleSwitch
+The new password to set for the user provided as clear text or pre-encoded.
+
+#### Force Change Password `toggleSwitch`
+
+
+User required to change password
+
+#### Bypass PingOne Password Policy `toggleSwitch`
+
+
+PingOne Password Policies will be bypassed
 
 ---
 
@@ -456,29 +404,25 @@ Set a user's password, optionally forcing user to change password and bypass pin
 
 Performs a check to determine if a user needs to accept an agreement. If required, agreement presentation resources are provided.
 
-#### matchAttribute
+#### Match Attributes `dropDown`
 
 
- - Description: Schema attributes to match against.
- - Type: dropDown
+Schema attributes to match against.
 
-#### identifier
-
-
- - Description: Identifier to match a user.
- - Type: textField
-
-#### agreementId
+#### Identifier `textField`
 
 
- - Description: ID of the PingOne Agreement
- - Type: textField
+Identifier to match a user.
 
-#### acceptLanguage
+#### Agreement ID `textField`
 
 
- - Description: IETF BCP 47 language tag
- - Type: textField
+ID of the PingOne Agreement
+
+#### Accept Language `textField`
+
+
+IETF BCP 47 language tag
 
 ---
 
@@ -487,23 +431,20 @@ Performs a check to determine if a user needs to accept an agreement. If require
 
 Retrieves user agreement acceptance information for all agreements in the PingOne environment.
 
-#### matchAttribute
+#### Match Attributes `dropDown`
 
 
- - Description: Schema attributes to match against.
- - Type: dropDown
+Schema attributes to match against.
 
-#### identifier
-
-
- - Description: Identifier to match a user.
- - Type: textField
-
-#### acceptLanguage
+#### Identifier `textField`
 
 
- - Description: IETF BCP 47 language tag
- - Type: textField
+Identifier to match a user.
+
+#### Accept Language `textField`
+
+
+IETF BCP 47 language tag
 
 ---
 
@@ -512,29 +453,25 @@ Retrieves user agreement acceptance information for all agreements in the PingOn
 
 Revokes the agreement for a given user if they have accepted the agreement previously
 
-#### matchAttribute
+#### Match Attributes `dropDown`
 
 
- - Description: Schema attributes to match against.
- - Type: dropDown
+Schema attributes to match against.
 
-#### identifier
-
-
- - Description: Identifier to match a user.
- - Type: textField
-
-#### agreementId
+#### Identifier `textField`
 
 
- - Description: ID of the PingOne Agreement
- - Type: textField
+Identifier to match a user.
 
-#### acceptLanguage
+#### Agreement ID `textField`
 
 
- - Description: IETF BCP 47 language tag
- - Type: textField
+ID of the PingOne Agreement
+
+#### Accept Language `textField`
+
+
+IETF BCP 47 language tag
 
 ---
 
@@ -543,23 +480,20 @@ Revokes the agreement for a given user if they have accepted the agreement previ
 
 Accepts an agreement for a user.
 
-#### matchAttribute
+#### Match Attributes `dropDown`
 
 
- - Description: Schema attributes to match against.
- - Type: dropDown
+Schema attributes to match against.
 
-#### identifier
-
-
- - Description: Identifier to match a user.
- - Type: textField
-
-#### agreementPresentationId
+#### Identifier `textField`
 
 
- - Description: Read User Agreement and Read Agreement capabilities generate this id in their agreement presentation output.
- - Type: textField
+Identifier to match a user.
+
+#### Agreement Presentation ID `textField`
+
+
+Read User Agreement and Read Agreement capabilities generate this id in their agreement presentation output.
 
 ---
 
@@ -568,23 +502,20 @@ Accepts an agreement for a user.
 
 Retrieves agreement content needed to present an agreement to a user that does not exist in PingOne.
 
-#### agreementId
+#### Agreement ID `textField`
 
 
- - Description: ID of the PingOne Agreement
- - Type: textField
+ID of the PingOne Agreement
 
-#### acceptLanguage
-
-
- - Description: IETF BCP 47 language tag
- - Type: textField
-
-#### userLocale
+#### Accept Language `textField`
 
 
- - Description: The user's location. A valid value is a language tag as defined in RFC 5646. Example: "en-US", "az-Arab"
- - Type: textField
+IETF BCP 47 language tag
+
+#### User Locale `textField`
+
+
+The user's location. A valid value is a language tag as defined in RFC 5646. Example: "en-US", "az-Arab"
 
 ---
 
@@ -593,11 +524,10 @@ Retrieves agreement content needed to present an agreement to a user that does n
 
 Retrieves population information.
 
-#### populationId
+#### Population ID `textField`
 
 
- - Description: ID of the Population
- - Type: textField
+ID of the Population
 
 ---
 
@@ -606,16 +536,14 @@ Retrieves population information.
 
 Retrieves information for all groups a user has membership for.
 
-#### matchAttribute
+#### Match Attributes `dropDown`
 
 
- - Description: Schema attributes to match against.
- - Type: dropDown
+Schema attributes to match against.
 
-#### identifier
+#### Identifier `textField`
 
 
- - Description: Identifier to match a user.
- - Type: textField
+Identifier to match a user.
 
 ---
