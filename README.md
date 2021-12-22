@@ -98,6 +98,10 @@ Input additional properties as JSON.
 
 Indicate whether the new user account must be verified after it is created.
 
+
+ - ACCOUNT_OK
+ - VERIFICATION_REQUIRED
+
 ---
 
 ### Read User (readUser)
@@ -109,6 +113,11 @@ Retrieves user information.
 
 
 Schema attributes to match against.
+
+
+ - User ID
+ - Username
+ - Email
 
 #### Identifier `textField`
 
@@ -143,6 +152,11 @@ Update user information in PingOne.
 
 
 Schema attributes to match against.
+
+
+ - User ID
+ - Username
+ - Email
 
 #### Identifier `textField`
 
@@ -206,6 +220,11 @@ Deletes a user.
 
 Schema attributes to match against.
 
+
+ - User ID
+ - Username
+ - Email
+
 #### Identifier `textField`
 
 
@@ -222,6 +241,11 @@ You can set enable status of a P1 User
 
 
 Schema attributes to match against.
+
+
+ - User ID
+ - Username
+ - Email
 
 #### Identifier `textField`
 
@@ -245,6 +269,11 @@ Sends a verification code to the user that can be used to verify their email.
 
 Schema attributes to match against.
 
+
+ - User ID
+ - Username
+ - Email
+
 #### Identifier `textField`
 
 
@@ -261,6 +290,11 @@ Verifies a users email with a code sent to them
 
 
 Schema attributes to match against.
+
+
+ - User ID
+ - Username
+ - Email
 
 #### Identifier `textField`
 
@@ -284,6 +318,11 @@ Sends a one time use recovery code to the user's email that may be used to recov
 
 Schema attributes to match against.
 
+
+ - User ID
+ - Username
+ - Email
+
 #### Identifier `textField`
 
 
@@ -300,6 +339,11 @@ You can check a user's P1 password to verify its current state
 
 
 Schema attributes to match against.
+
+
+ - User ID
+ - Username
+ - Email
 
 #### Identifier `textField`
 
@@ -322,6 +366,11 @@ Recovers a forgotten password using a one time use recovery code
 
 
 Schema attributes to match against.
+
+
+ - User ID
+ - Username
+ - Email
 
 #### Identifier `textField`
 
@@ -350,6 +399,11 @@ User can reset their PingOne password
 
 Schema attributes to match against.
 
+
+ - User ID
+ - Username
+ - Email
+
 #### Identifier `textField`
 
 
@@ -376,6 +430,11 @@ Set a user's password, optionally forcing user to change password and bypass pin
 
 
 Schema attributes to match against.
+
+
+ - User ID
+ - Username
+ - Email
 
 #### Identifier `textField`
 
@@ -409,6 +468,11 @@ Performs a check to determine if a user needs to accept an agreement. If require
 
 Schema attributes to match against.
 
+
+ - User ID
+ - Username
+ - Email
+
 #### Identifier `textField`
 
 
@@ -436,6 +500,11 @@ Retrieves user agreement acceptance information for all agreements in the PingOn
 
 Schema attributes to match against.
 
+
+ - User ID
+ - Username
+ - Email
+
 #### Identifier `textField`
 
 
@@ -457,6 +526,11 @@ Revokes the agreement for a given user if they have accepted the agreement previ
 
 
 Schema attributes to match against.
+
+
+ - User ID
+ - Username
+ - Email
 
 #### Identifier `textField`
 
@@ -484,6 +558,11 @@ Accepts an agreement for a user.
 
 
 Schema attributes to match against.
+
+
+ - User ID
+ - Username
+ - Email
 
 #### Identifier `textField`
 
@@ -540,6 +619,11 @@ Retrieves information for all groups a user has membership for.
 
 
 Schema attributes to match against.
+
+
+ - User ID
+ - Username
+ - Email
 
 #### Identifier `textField`
 
